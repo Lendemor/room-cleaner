@@ -1,0 +1,17 @@
+download:
+  rules:
+    "Fonts":
+      - "*.ttf"
+    "~/Documents/Setup":
+      - "*.deb" 
+      - "*.msi"
+      - "*.exe"
+    "Pdf":
+      - "*.pdf" 
+    "ssl":
+      - "*.pem"
+      - "*.der"
+    "~/Pictures":
+      - "*.png"
+      - "*.jpeg"
+  path: "~/Downloads"
