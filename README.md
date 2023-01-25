@@ -1,4 +1,8 @@
-A small and very simple utility to automatically sort your folders.
+> *"Remember when your mom used to always asked you to clean your room?*
+>
+> *She probably never asked you to clean your Download folder, but you should still do it"*
+
+A small and very simple utility to automatically clean up your folders with some simple rules.
 
 ## Usage
 Write in `cleaners.yaml` the rule you want
