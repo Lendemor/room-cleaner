@@ -2,8 +2,8 @@ import os.path as op
 import typer
 import yaml
 from yaml import Loader
-from typing import Any
-from sorter import FolderCleaner, __app_name__, __version__, start_cleaning
+from typing import Any, Dict
+from sorter import FolderCleaner, __app_name__, __version__
 from rich import print
 
 app = typer.Typer()
@@ -11,7 +11,7 @@ app = typer.Typer()
 
 class Config:
     file: str
-    data: dict[str, Any]
+    data: Dict[str, Any]
 
     def __init__(self) -> None:
         self.file = "cleaners.yaml"
@@ -46,7 +46,8 @@ def clean(cleaner_name: str):
         exit()
 
     print(
-        f"Starting cleaner [bold yellow]{cleaner_name}[/bold yellow] in {cleaner.path}"
+        f"Starting cleaner [bold yellow]{cleaner_name}[/bold yellow] in"
+        f" {cleaner.path}"
     )
     cleaner.start()
 

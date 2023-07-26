@@ -1,17 +1,44 @@
 download:
+  path: "~/Downloads"
   rules:
     "Fonts":
       - "*.ttf"
     "~/Documents/Setup":
-      - "*.deb" 
+      - "*.deb"
       - "*.msi"
       - "*.exe"
-    "Pdf":
-      - "*.pdf" 
+      - "*.sh"
+    "pdf":
+      - "*.pdf"
+      - "*.PDF"
+    "certs":
+      - "*.crt"
+      - "*.p7c"
     "ssl":
       - "*.pem"
       - "*.der"
     "~/Pictures":
       - "*.png"
       - "*.jpeg"
-  path: "~/Downloads"
+      - "*.jpg"
+      - "*.gif"
+    "Archives":
+      - "*.zip"
+      - "*.tar.gz"
+      - "*.tar.xz"
+      - "*.bz2"
+    "media":
+      - "*.mp4"
+      - "*.mp3"
+      - "*.wav"
+      - "*.ogg"
+    "Excel":
+      - "*.xlsx"
+      - "*.csv"
+    "docs":
+      - "*.odt"
+      - "*.ods"
+      - "*.docx"
+      - "*.doc"
+    "txt":
+      - "*.txt"
